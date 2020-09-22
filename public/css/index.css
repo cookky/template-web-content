@@ -93,9 +93,12 @@
 
 /* card content */
 
+ss.card-content {
+    padding-top: 10px;
+}
+
 .card-content .card-img-top {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-radius: 5px;
 }
 
 .card-content .card-img-top {
@@ -177,4 +180,13 @@
     /* /sub card */
     /* card content */
     /* /card content */
+    /* bloh content */
+    .txt-header-blog {
+        width: 100%;
+        text-align: center;
+    }
+    .txt-header-blog h3::before {
+        display: none;
+    }
+    /* /bloh content */
 }
