@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('index');
     }
+
+    public function showBlog()
+    {
+        return view('show-blog');
+    }
 }

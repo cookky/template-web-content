@@ -22,7 +22,7 @@
                         <div class="body">
                             <div class="card-body">
                                 <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                                <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                                <h2 class="card-title"><a href="/show-blog">The Pleasure of Defying Food Fashions</a></h2>
                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             </div>
@@ -41,7 +41,7 @@
                         <div class="row no-gutters">
                             <div class="body">
                                 <div class="card-body">
-                                    <h3 class="card-title">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</h3>
+                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
                         <div class="row no-gutters">
                             <div class="body">
                                 <div class="card-body">
-                                    <h3 class="card-title">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</h3>
+                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                         <div class="row no-gutters">
                             <div class="body">
                                 <div class="card-body">
-                                    <h3 class="card-title">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</h3>
+                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -89,7 +89,7 @@
                         <div class="row no-gutters">
                             <div class="body">
                                 <div class="card-body">
-                                    <h3 class="card-title">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</h3>
+                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -129,7 +129,7 @@
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -147,7 +147,7 @@
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -173,7 +173,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -189,7 +189,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -205,7 +205,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title">The Pleasure of Defying Food Fashions</h2>
+                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated 3 mins ago</small>

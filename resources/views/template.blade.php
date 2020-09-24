@@ -14,6 +14,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="{{ asset('css/template.css') }}">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/show-blog.css') }}">
 </head>
 
 
