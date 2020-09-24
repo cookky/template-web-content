@@ -70,11 +70,11 @@
     </div>
 
     <div class="row">
-
         <div class="col-12 col-sm-4">
 
             <div class="card-content">
                 <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
                         <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
@@ -85,12 +85,14 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="col-12 col-sm-4">
 
             <div class="card-content">
                 <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
                         <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
@@ -101,12 +103,14 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="col-12 col-sm-4">
 
             <div class="card-content">
                 <div class="card">
+                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
                         <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
                         <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
@@ -117,8 +121,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
 </div>
