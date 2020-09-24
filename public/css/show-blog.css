@@ -62,10 +62,13 @@ h1 {
 
 .tag-list h5 {
     color: #718096;
+    font-size: 17px;
 }
 
 .tag-list .tag a {
-    padding: 3px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
     margin-left: 10px;
     font-size: 14px;
 }
@@ -79,16 +82,16 @@ h1 {
 .share {
     position: absolute;
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     top: 0;
     right: 20px;
 }
 .share h5 {
     color: #718096;
+    font-size: 17px;
 }
 .share a {
-    padding-left: 15px;
-    padding-top: 2px;
+    padding-left: 10px;
 }
 
 .fa-facebook {
@@ -134,12 +137,14 @@ h1 {
     }
     .share h5 {
         font-size: 16px;
+        padding-top: 2px;
     }
     .share {
         position: relative;
         right: 0;
     }
     .fa-facebook {
-        padding-top: 3px;
+        font-size: 20px;
+        margin-top: 3px;
     }
 }
