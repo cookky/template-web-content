@@ -52,22 +52,94 @@ h1 {
     border: 0px;
 }
 
+.footer-tag {
+    position: relative;
+}
 .tag-list {
     display: flex;
     align-items: baseline;
 }
 
-.tag-list h5{
+.tag-list h5 {
     color: #718096;
 }
 
-.tag-list .tag a{
+.tag-list .tag a {
     padding: 3px;
     margin-left: 10px;
     font-size: 14px;
 }
 
-.tag-list .share {
+/* .tag-list .share {
+    display: flex;
     position: absolute;
     right: 50px;
+} */
+
+.share {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    top: 0;
+    right: 20px;
+}
+.share h5 {
+    color: #718096;
+}
+.share a {
+    padding-left: 15px;
+    padding-top: 2px;
+}
+
+.fa-facebook {
+    font-size: 24px;
+    color: rgb(66, 103, 178);
+}
+
+/* .share a:hover {
+    background-color: rgb(66, 103, 178);
+    color: #fff;
+    border-radius: 999px;
+} */
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    .txt-header-blog h3 {
+        padding-left: 0px;
+    }
+
+    .update-text {
+        position: relative;
+    }
+
+    .head-img {
+        text-align: center;
+    }
+
+    /* .tag-list {
+        position: relative;
+    }
+
+    .tag-list .share {
+        right: 0;
+        top: 40px;
+    } */
+
+    .tag-list h5 {
+        font-size: 16px;
+    }
+    .share h5 {
+        font-size: 16px;
+    }
+    .share {
+        position: relative;
+        right: 0;
+    }
+    .fa-facebook {
+        padding-top: 3px;
+    }
 }

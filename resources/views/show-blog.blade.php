@@ -46,15 +46,17 @@
                     </p>
 
                     <hr>
-
-                    <div class="tag-list">
-                        <h5>Tags:</h5>
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h6 class="tag"><a href="#">#เกมส์</a></h6>
+                    <div class="footer-tag">
+                        <div class="tag-list">
+                            <h5>Tags:</h5>
+                            <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
+                            <h6 class="tag"><a href="#">#เกมส์</a></h6>
+                        </div>
 
                         <div class="share">
                             <h5>Share:</h5>
 
+                            <a href="#"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +74,7 @@
     <div class="row">
         <div class="col-12 col-sm-4">
 
-            <div class="card-content">
+            <div class="card-content mt-3">
                 <div class="card">
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
@@ -90,7 +92,7 @@
 
         <div class="col-12 col-sm-4">
 
-            <div class="card-content">
+            <div class="card-content mt-3">
                 <div class="card">
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
@@ -108,7 +110,7 @@
 
         <div class="col-12 col-sm-4">
 
-            <div class="card-content">
+            <div class="card-content mt-3">
                 <div class="card">
                     <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
                     <div class="card-body">
