@@ -5,5 +5,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/show-blog', [HomeController::class, 'showBlog']);
-Route::get('/tags', [HomeController::class, 'tag']);
+Route::get('/{url}', [HomeController::class, 'showBlog'])->name('show-blog');
+Route::get('/หมวดหมู่/{tag}', [HomeController::class, 'tag'])->name('tag');

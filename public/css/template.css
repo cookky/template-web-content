@@ -6,6 +6,22 @@ body {
     display: flex!important;
 }
 
+/* search */
+.txt-search {
+    width: 300px;
+}
+.list {
+    position: relative;
+}
+
+.list .list-group {
+    position: absolute;
+    top: 5px;
+    z-index: 999;
+}
+
+/* /search */
+
 @media (max-width: 768px) {
     .clear-mobile {
         padding-left: 0px;

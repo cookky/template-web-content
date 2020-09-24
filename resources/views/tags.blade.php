@@ -8,65 +8,33 @@
     <div class="row">
         <div class="col-12">
             <div>
-                <h1>#บทความ</h1>
+                <h1>{{ $type->name }}</h1>
             </div>
         </div>
     </div>
 
     <div class="row">
+        @if(count($posts))
+        @foreach($posts as $post)
         <div class="col-12 col-sm-4">
 
             <div class="card-content mt-3">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
+                    <img class="card-img-top" src="{{ $post->image }}" alt="{{ $post->title }}">
                     <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h6 class="tag"><a href="{{ route('tag', ['tag' => $post->types->name]) }}">{{ $post->types->name}}</a></h6>
+                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $post->url]) }}">{{ $post->title }}</a></h2>
+                        <p class="card-text">{{ $post->show_detail }}</p>
                         <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">Last updated {{ $post->show_date }}</small>
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
-
-        <div class="col-12 col-sm-4">
-
-            <div class="card-content mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-12 col-sm-4">
-
-            <div class="card-content mt-3">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        @endforeach
+        @endif
     </div>
 </div>
 
