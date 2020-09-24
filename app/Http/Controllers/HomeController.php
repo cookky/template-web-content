@@ -16,4 +16,9 @@ class HomeController extends Controller
     {
         return view('show-blog');
     }
+
+    public function tag()
+    {
+        return view('tags');
+    }
 }
