@@ -125,6 +125,7 @@ a:hover {
 }
 .card-content .p-height {
     height: 100px;
+    overflow: hidden;
 }
 
 /* /card content */
