@@ -22,7 +22,7 @@
                     <img class="card-img-top" src="{{ $post->image }}" alt="{{ $post->title }}">
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $post->types->name]) }}">{{ $post->types->name }}</a></h6>
-                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $post->url]) }}">{{ $post->title }}</a></h2>
+                        <h2 class="card-title text-truncate"><a href="{{ route('show-blog', ['url' => $post->url]) }}">{{ $post->title }}</a></h2>
                         <p class="card-text p-height">{{ $post->show_detail }}</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated {{ $post->show_date }}</small>
