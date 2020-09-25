@@ -1,5 +1,5 @@
 @extends('template')
-@section('title', 'Page Title')
+@section('title', {{ $post->title }})
 
 @section('css')
 <style>
