@@ -13,7 +13,7 @@ class HomeController extends Controller
         $post = Post::with('types')->first();
         $posts = Post::with('types')->limit(6)->paginate(3);
         $postAll = Post::with('types')->paginate(6);
-        $postsRight = Post::with('types')->limit(4)->get();
+        $postsRight = Post::with('types')->limit(3)->get();
         return view('index')
         ->with('post', $post)
         ->with('posts', $posts)
