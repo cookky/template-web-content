@@ -6,6 +6,15 @@ body {
     display: flex!important;
 }
 
+/* pagination */
+.w-5 {
+    width: 50px;
+}
+.h-5{
+    width: 50px;
+}
+/* /pagination */
+
 /* search */
 .txt-search {
     width: 300px;

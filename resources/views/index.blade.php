@@ -80,7 +80,7 @@
         </div>
         @endforeach
         <div class="col-12">
-        {!! $posts->links() !!}
+        {{ $posts->links() }}
         </div>
         @endif
 
