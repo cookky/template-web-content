@@ -40,4 +40,11 @@ class HomeController extends Controller
         ->with('type', $type)
         ->with('posts', $posts);
     }
+
+    public function blogs()
+    {
+        $posts = Post::with('types')->paginate(18);;
+        return view('index')
+        ->with('posts', $posts);
+    }
 }

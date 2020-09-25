@@ -69,7 +69,7 @@
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $p->types->name]) }}">{{ $p->types->name }}</a></h6>
                         <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $p->url]) }}">{{ $p->title }}</a></h2>
-                        <p class="card-text">{{ $p->show_detail }}</p>
+                        <p class="card-text p-height">{{ $p->show_detail }}</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated {{ $p->show_date }}</small>
                         </p>

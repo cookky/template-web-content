@@ -47,7 +47,7 @@
                             <a class="nav-link" href="/">หน้าหลัก <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">บทความ</a>
+                            <a class="nav-link" href="{{ route('blogs') }}">บทความทั้งหมด</a>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +84,7 @@
                                 <a class="nav-link" href="/">หน้าหลัก <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">บทความ</a>
+                            <a class="nav-link" href="{{ route('blogs') }}">บทความทั้งหมด</a>
                             </li>
                         </ul>
                     </div>

@@ -102,7 +102,7 @@ a:hover {
 
 /* card content */
 
-ss.card-content {
+.card-content {
     padding-top: 10px;
 }
 
@@ -122,6 +122,9 @@ ss.card-content {
 .card-content .card-title {
     font-size: 18px;
     padding-top: 10px;
+}
+.card-content .p-height {
+    height: 100px;
 }
 
 /* /card content */
