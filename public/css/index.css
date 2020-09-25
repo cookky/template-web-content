@@ -24,7 +24,10 @@ a:hover {
 /* /top head */
 
 /* head card */
-
+.card .img img{
+    height: 400px;
+    object-fit: cover;
+}
 .card .card-title {
     padding-top: 10px;
 }
@@ -93,9 +96,7 @@ a:hover {
     font-size: 16px;
 }
 
-.sub-card .card-body .card-text {
-    text-align: end;
-}
+
 
 /* /sub card */
 

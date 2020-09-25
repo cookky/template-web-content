@@ -5,13 +5,20 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use App\Models\PostType;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $post = Post::with('types')->first();
+        $posts = Post::with('types')->limit(6)->paginate(3);
+        $postAll = Post::with('types')->paginate(6);
+        $postsRight = Post::with('types')->limit(4)->get();
+        return view('index')
+        ->with('post', $post)
+        ->with('posts', $posts)
+        ->with('postAll', $postAll)
+        ->with('postsRight', $postsRight);
     }
 
     public function showBlog($url)

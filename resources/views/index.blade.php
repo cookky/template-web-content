@@ -15,16 +15,16 @@
                 <div class="row no-gutters">
                     <div class="col-12 col-sm-5">
                         <div class="img">
-                            <img class="card-img" src="https://via.placeholder.com/500x700" alt="">
+                            <img class="card-img" src="{{ $post->image }}" alt="{{ $post->title }}">
                         </div>
                     </div>
                     <div class="col-12 col-sm-7">
                         <div class="body">
                             <div class="card-body">
-                                <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                                <h2 class="card-title"><a href="/show-blog">The Pleasure of Defying Food Fashions</a></h2>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h6 class="tag"><a href="{{ route('tag', ['tag' => $post->types->name]) }}">{{ $post->types->name }}</a></h6>
+                                <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $post->url]) }}">{{ $post->title }}</a></h2>
+                                <p class="card-text">{{ $post->show_detail}}</p>
+                                <p class="card-text"><small class="text-muted">Last updated {{ $post->show_date }}</small></p>
                             </div>
                         </div>
                     </div>
@@ -34,15 +34,16 @@
         </div>
 
         <div class="col-12 col-sm-4">
-
+            @if(count($postsRight))
+            @foreach($postsRight as $pr)
             <div class="col-12 clear-mobile">
                 <div class="sub-card">
                     <div class="card mb-3">
                         <div class="row no-gutters">
                             <div class="body">
                                 <div class="card-body">
-                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <h3 class="card-title"><a href="{{ route('show-blog', ['url' => $pr->url]) }}">{{ $pr->title }}</a></h3>
+                                    <p class="card-text"><small class="text-muted">Last updated {{ $pr->show_date }}</small></p>
                                 </div>
                             </div>
                         </div>
@@ -50,113 +51,39 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-12 clear-mobile">
-                <div class="sub-card">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="body">
-                                <div class="card-body">
-                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 clear-mobile">
-                <div class="sub-card">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="body">
-                                <div class="card-body">
-                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 clear-mobile">
-                <div class="sub-card">
-                    <div class="card mb-3">
-                        <div class="row no-gutters">
-                            <div class="body">
-                                <div class="card-body">
-                                    <h3 class="card-title"><a href="#">Make A Drink And We'll Tell You Where You'll Meet Your Soulmate</a></h3>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            @endforeach
+            @endif
 
         </div>
 
     </div>
 
     <div class="row">
+        @if(count($posts))
+        @foreach($posts as $p)
         <div class="col-12 col-sm-4">
 
             <div class="card-content">
                 <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
+                    <img class="card-img-top" src="{{ $p->url }}" alt="{{ $p->title }}">
                     <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h6 class="tag"><a href="{{ route('tag', ['tag' => $p->types->name]) }}">{{ $p->types->name }}</a></h6>
+                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $p->url]) }}">{{ $p->title }}</a></h2>
+                        <p class="card-text">{{ $p->show_detail }}</p>
                         <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">Last updated {{ $p->show_date }}</small>
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
+        @endforeach
 
-        <div class="col-12 col-sm-4">
+        {{ $posts->links() }}
 
-            <div class="card-content">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        @endif
 
-        </div>
-
-        <div class="col-12 col-sm-4">
-
-            <div class="card-content">
-                <div class="card">
-                    <img class="card-img-top" src="https://via.placeholder.com/500x700" alt="">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 
     <div class="row">
@@ -167,54 +94,28 @@
 
     <div class="row">
 
+        @if(count($postAll))
+        @foreach($postAll as $pa)
         <div class="col-12 col-sm-4">
 
             <div class="card-content">
                 <div class="card">
                     <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h6 class="tag"><a href="{{ route('tag', ['tag' => $pa->types->name]) }}">{{ $pa->types->name }}</a></h6>
+                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $pa->url]) }}">{{ $pa->title }}</a></h2>
+                        <p class="card-text">{{ $pa->show_detail }}</p>
                         <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
+                            <small class="text-muted">Last updated {{ $pa->show_date }}</small>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        @endforeach
 
-        <div class="col-12 col-sm-4">
-
-            <div class="card-content">
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-sm-4">
-
-            <div class="card-content">
-                <div class="card">
-                    <div class="card-body">
-                        <h6 class="tag"><a href="#">#บทความทั่วไป</a></h6>
-                        <h2 class="card-title"><a href="#">The Pleasure of Defying Food Fashions</a></h2>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        {{ $postAll->links() }}
+        
+        @endif
     </div>
 
 </div>
