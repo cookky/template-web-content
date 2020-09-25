@@ -79,9 +79,9 @@
 
         </div>
         @endforeach
-
+        <div class="col-12">
         {{ $posts->links() }}
-
+        </div>
         @endif
 
     </div>
