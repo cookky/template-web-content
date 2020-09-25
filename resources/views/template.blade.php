@@ -43,10 +43,10 @@
 
                 <div class="">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/">หน้าหลัก <span class="sr-only">(current)</span></a>
+                        <li class="nav-item {{ request()->routeIs('/') ? 'active' : ''}}">
+                            <a class="nav-link" href="/" :active="request()->routeIs('/')">หน้าหลัก</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ request()->routeIs('blogs') ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('blogs') }}">บทความทั้งหมด</a>
                         </li>
                     </ul>
@@ -80,10 +80,10 @@
                     <div class="drawer-right">
 
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">หน้าหลัก <span class="sr-only">(current)</span></a>
+                            <li class="nav-item {{ request()->routeIs('/') ? 'active' : ''}}">
+                                <a class="nav-link" href="/">หน้าหลัก</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->routeIs('blogs') ? 'active' : ''}}">
                             <a class="nav-link" href="{{ route('blogs') }}">บทความทั้งหมด</a>
                             </li>
                         </ul>
