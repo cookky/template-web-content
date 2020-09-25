@@ -1,5 +1,5 @@
 @extends('template')
-@section('title', 'Page Title')
+@section('title', 'หมวดหมู่ทั้งหมด')
 
 
 @section('content')
