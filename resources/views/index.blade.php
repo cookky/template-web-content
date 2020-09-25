@@ -80,7 +80,7 @@
         </div>
         @endforeach
         <div class="col-12">
-            <div class="d-flex justify-content-flax-end">
+            <div class="d-flex justify-content-end">
                 {{ $posts->links() }}
             </div>
         </div>
