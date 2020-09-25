@@ -19,6 +19,7 @@
 
             <div class="card-content">
                 <div class="card">
+                    <img class="card-img-top" src="{{ $post->image }}" alt="{{ $post->title }}">
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $post->types->name]) }}">{{ $post->types->name }}</a></h6>
                         <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $post->url]) }}">{{ $post->title }}</a></h2>
