@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="txt-header pt-5 pb-5">
-        <h1>Suggested Articles</h1>
+        <h1>สาระน่ารู้</h1>
     </div>
 
     <div class="row">
