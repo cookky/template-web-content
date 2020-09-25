@@ -68,7 +68,7 @@
                     <img class="card-img-top" src="{{ $p->image }}" alt="{{ $p->title }}">
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $p->types->name]) }}">{{ $p->types->name }}</a></h6>
-                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $p->url]) }}">{{ $p->title }}</a></h2>
+                        <h2 class="card-title text-truncate"><a href="{{ route('show-blog', ['url' => $p->url]) }}">{{ $p->title }}</a></h2>
                         <p class="card-text p-height">{{ $p->show_detail }}</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated {{ $p->show_date }}</small>
@@ -104,8 +104,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $pa->types->name]) }}">{{ $pa->types->name }}</a></h6>
-                        <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $pa->url]) }}">{{ $pa->title }}</a></h2>
-                        <p class="card-text">{{ $pa->show_detail }}</p>
+                        <h2 class="card-title text-truncate"><a href="{{ route('show-blog', ['url' => $pa->url]) }}">{{ $pa->title }}</a></h2>
+                        <p class="card-text p-height">{{ $pa->show_detail }}</p>
                         <p class="card-text">
                             <small class="text-muted">Last updated {{ $pa->show_date }}</small>
                         </p>
