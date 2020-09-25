@@ -65,7 +65,7 @@
 
             <div class="card-content">
                 <div class="card">
-                    <img class="card-img-top" src="{{ $p->url }}" alt="{{ $p->title }}">
+                    <img class="card-img-top" src="{{ $p->image }}" alt="{{ $p->title }}">
                     <div class="card-body">
                         <h6 class="tag"><a href="{{ route('tag', ['tag' => $p->types->name]) }}">{{ $p->types->name }}</a></h6>
                         <h2 class="card-title"><a href="{{ route('show-blog', ['url' => $p->url]) }}">{{ $p->title }}</a></h2>
@@ -114,7 +114,7 @@
         @endforeach
 
         {{ $postAll->links() }}
-        
+
         @endif
     </div>
 
