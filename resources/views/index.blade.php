@@ -1,5 +1,5 @@
 @extends('template')
-@section('title', 'Page Title')
+@section('title', '')
 
 
 @section('content')
