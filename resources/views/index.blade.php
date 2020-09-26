@@ -1,5 +1,5 @@
 @extends('template')
-@section('title', '')
+@section('title', 'ข่าวสารดีๆ')
 
 
 @section('content')
