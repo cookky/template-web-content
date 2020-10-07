@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\SitemapGenerator;
 
 Route::get('sitemap', function () {
-    SitemapGenerator::create('http://localhost/')->writeToFile('sitemap.xml');
+    SitemapGenerator::create('http://178.128.61.163/')->writeToFile('sitemap.xml');
     return "success";
 });
 
