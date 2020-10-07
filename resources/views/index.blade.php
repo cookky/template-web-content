@@ -1,11 +1,15 @@
 @extends('template')
-@section('title', 'ข่าวสารดีๆ')
+@section('title', '')
 
 
 @section('content')
 <div class="container">
     <div class="txt-header pt-5 pb-5">
-        <h1>สาระน่ารู้</h1>
+        <h1>สล็อตน่าเล่น</h1>
+        <p class="pl-5">
+            สล็อตน่าเล่นคือเว็บไซต์ที่รวบรวมเกมส์สล็อตต่างทุกรูปแบบมารีวิวให้ท่านได้รู้จักกับ<strong><a href="#">เกมส์สล็อต</a></strong>
+            รวมถึงเทคนิคดีๆมาฝากกัน
+    </p>
     </div>
 
     <div class="row">

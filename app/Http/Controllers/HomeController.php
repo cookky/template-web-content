@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $post = Post::with('types')->first();
-        $posts = Post::with('types')->limit(6)->paginate(3);
+        $posts = Post::with('types')->paginate(12);
         $postAll = Post::with('types')->paginate(6);
         $postsRight = Post::with('types')->limit(3)->get();
         return view('index')
