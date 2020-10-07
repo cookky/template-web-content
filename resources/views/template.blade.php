@@ -9,12 +9,12 @@
     <meta name="generator" content="cc dev v1.0.1">
     <title>สล็อตน่าเล่น ฟรีเครดิต | @yield('title')</title>
 
-    <link rel="icon" sizes="16x16" type="image/png" href="/favicon.png" />
+    <link rel="icon" sizes="16x16" type="image/png" href="{{ asset('favicon.png') }}" />
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="สล็อตน่าเล่น ฟรีเครดิต" />
     <meta name="twitter:description" content="สล็อตน่าเล่นคือคลังความรู้ที่รวบรวมเทคนิคการเล่นสล็อตในแบบต่างๆ รวมถึงบทความดีๆเกี่ยวกับเกมส์สล็อตออนไลน์" />
-    <meta name="twitter:image" content="/favicon.png" />
+    <meta name="twitter:image" content="{{ asset('favicon.png') }}" />
     <meta name="twitter:creator" content="@slotdd.com" />
     <meta name="twitter:site" content="@slotdd.com" />
 
@@ -85,7 +85,7 @@
     <!-- decktop -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white d-none d-sm-block">
         <div class="container pt-3 pb-3">
-            <a class="navbar-brand" href="/">สล็อตน่าเล่น</a>
+            <a class="navbar-brand" href="/"><img src="{{ asset('title-logo.png') }}" alt="สล็อตน่าเล่น" width="100%"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
